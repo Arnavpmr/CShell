@@ -54,6 +54,8 @@ char **str_split(char *str, char *delim, int *len)
 
     *len = token_count;
 
+    tokens[token_count] = NULL;
+
     return tokens;
 }
 
